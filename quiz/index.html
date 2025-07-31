@@ -29,6 +29,8 @@
 
     <!--HEADER-->
     <header class="header">
+      <button class="language-btn" data-popup-open="language-popup"></button>
+
       <div class="header__content">
         <div class="header__logo">
           <a href="./../" class="logo" aria-label="Galbani">
@@ -127,6 +129,19 @@
     <!--POPUPS-->
     <div class="backdrop" data-backdrop>
       <div class="popup" data-popup>
+        <!--languages-->
+        <div class="popup-content" id="language-popup">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="title">Изменить язык</h2>
+          <ul class="language-switcher">
+            <li data-lang="ru" lang="ru">Русский</li>
+            <li data-lang="hy" lang="hy">Հայերեն</li>
+            <li data-lang="ka" lang="ka">ქართული</li>
+            <li data-lang="kk" lang="kk">Қазақ</li>
+            <li data-lang="az" lang="az">Azərbaycan</li>
+          </ul>
+        </div>
+
         <!--markets-->
         <div class="popup-content" id="markets">
           <button class="popup-close" data-popup-close></button>

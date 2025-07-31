@@ -29,6 +29,7 @@ body.locked {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  backdrop-filter: blur(5px);
   &.active {
     visibility: visible;
     opacity: 1;
@@ -183,6 +184,7 @@ body.locked {
       background: var(--white);
       color: var(--blue);
       cursor: auto;
+      pointer-events: none;
     }
   }
 }

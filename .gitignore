@@ -1,0 +1,60 @@
+# Node.js (если используется для сборки или dev-серверов)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# dotenv
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build/output directories
+dist/
+build/
+out/
+
+# Dependency directories
+jspm_packages/
+
+# Coverage
+coverage/
+
+# Parcel, Vite, etc. (если вдруг используется)
+.cache/
+
+# Optional: compiled files
+*.tsbuildinfo
+*.map
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.backup
+*.orig
+
+# Optional: images or media cache
+*.webp

@@ -1211,6 +1211,8 @@ body.locked {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .backdrop.active {
   visibility: visible;
@@ -1377,6 +1379,7 @@ body.locked {
   background: var(--white);
   color: var(--blue);
   cursor: auto;
+  pointer-events: none;
 }
 
 .hero-backgrounds {
@@ -1542,7 +1545,7 @@ body.locked {
   top: 50%;
   z-index: 2;
   pointer-events: none;
-  background: url("../img/hero/ribbon.png") no-repeat right;
+  background: url("../img/hero/ribbon.webp") no-repeat right;
   background-size: auto 100%;
 }
 @media (max-width: 1023px) {
