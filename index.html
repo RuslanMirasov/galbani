@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <meta name="theme-color" content="#012D68" />
+    <meta name="description" content="Описание Galbani" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Galbani" />
+    <meta property="og:description" content="Описание Galbani" />
+    <meta property="og:image" content="./assets/img/preview.jpg" />
+    <meta property="og:url" content="./" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Galbani" />
+    <meta name="twitter:description" content="Описание Galbani" />
+    <meta name="twitter:image" content="./assets/img/preview.jpg" />
+
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <title>Galbani</title>
+  </head>
+  <body class="body">
+    <!--PRELOADER-->
+    <div class="preloader">
+      <p><span data-load-procent>0</span>%</p>
+    </div>
+
+    <!--HEADER-->
+    <header class="header">
+      <button class="language-btn" data-popup-open="language-popup"></button>
+
+      <div class="header__content">
+        <div class="header__logo header__logo--small">
+          <a href="./" class="logo" aria-label="Galbani">
+            <img src="./assets/img/svg/logo.svg" alt="Galbani" width="80" height="66" loading="eager" />
+          </a>
+        </div>
+
+        <nav class="navigation">
+          <ul class="menu menu--left">
+            <li><a href="./about" class="menu__link">Что такое Итальянское счастье?</a></li>
+            <li><a href="#recipes" class="menu__link" data-scrollto>Рецепты</a></li>
+          </ul>
+          <ul class="menu menu--right">
+            <li><a href="./quiz" class="menu__link">А какой ты итальянец?</a></li>
+            <li><a href="#" class="menu__link" data-popup-open="markets">Где купить</a></li>
+          </ul>
+        </nav>
+
+        <button class="burger">
+          <span>Меню бургер</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--ГЕРОЙ-->
+      <section class="section section--images">
+        <div class="hero-backgrounds">
+          <div class="hero-backgrounds__left">
+            <img src="./assets/img/hero/bg-left.webp" alt="Galbani" />
+          </div>
+          <div class="hero-backgrounds__right">
+            <img src="./assets/img/hero/bg-right.webp" alt="Galbani" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--hero">
+        <div class="container">
+          <div class="hero-head">
+            <img src="./assets/img/hero/title.webp" alt="Galbani" />
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-content__image">
+              <img src="./assets/img/hero/image.webp" alt="Galbani" class="bounce" />
+            </div>
+            <h1 class="title">
+              <span>открывайте</span> <br />
+              множество простых <br />
+              блюд каждую неделю
+            </h1>
+
+            <a href="#happynes" data-scrollto class="scroll-down"></a>
+          </div>
+        </div>
+      </section>
+
+      <!--Итальянское счастье-->
+      <section class="section section--happynes">
+        <span class="target" id="happynes"></span>
+        <div class="white-circle">
+          <div class="container">
+            <svg viewBox="0 0 610 60" xmlns="http://www.w3.org/2000/svg" class="title">
+              <defs>
+                <path id="curve-top" d="M30,70 A295,80 0 0 1 580,70" />
+                <path id="curve-bottom" d="M30,110 A280,80 0 0 1 580,110" />
+              </defs>
+
+              <text>
+                <textPath href="#curve-top" startOffset="50%" text-anchor="middle">Мы хотим, чтобы итальянское</textPath>
+              </text>
+
+              <text>
+                <textPath href="#curve-bottom" startOffset="50%" text-anchor="middle">счастье длилось весь год!</textPath>
+              </text>
+            </svg>
+
+            <ul class="happynes">
+              <li>
+                <div class="happynes__image">
+                  <img src="./assets/img/happynes1.webp" alt="Galbani" width="174" />
+                </div>
+                <p>
+                  Galbani дарит 52&nbsp;рецепта с&nbsp;моцареллой и&nbsp;другими итальянскими ингредиентами&nbsp;— по&nbsp;одному на&nbsp;каждую
+                  неделю года!
+                </p>
+              </li>
+              <li>
+                <div class="happynes__image">
+                  <img src="./assets/img/happynes2.webp" alt="Galbani" width="216" />
+                </div>
+                <p>
+                  52&nbsp;возможности открыть для&nbsp;себя новые грани итальянской кухни, удивить близких и&nbsp;создать свои собственные кулинарные
+                  шедевры.
+                </p>
+              </li>
+              <li>
+                <div class="happynes__image">
+                  <img src="./assets/img/happynes3.webp" alt="Galbani" width="247" />
+                </div>
+                <p>Следуй за&nbsp;нами, и&nbsp;каждая неделя превратится в&nbsp;маленькое итальянское приключение!</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Рецепт недели-->
+      <section class="section section--recipe">
+        <div class="container">
+          <h2 class="title ta--center white">Рецепт недели</h2>
+
+          <a href="./single" class="recipe recipe--week">
+            <div class="recipe__image">
+              <img src="./assets/img/recipes/3.webp" alt="Galbani" />
+            </div>
+            <div class="recipe__content">
+              <h3 class="title"><span>Запечённый картофель с&nbsp;моцареллой и&nbsp;салями</span></h3>
+              <p class="description">
+                Нежный картофель с&nbsp;хрустящей корочкой, запечённый до&nbsp;золотистого совершенства, скрывает внутри тянущуюся моцареллу
+                Galbani&nbsp;— сливочную, мягкую, словно солнечное послевкусие итальянского утра.
+              </p>
+              <button class="button">Подробнее</button>
+              <ul class="info info--big">
+                <li>45 мин</li>
+                <li>4 порции</li>
+                <li class="ease">просто</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!--Список рецептов-->
+      <section class="section section--recipe">
+        <span class="target" id="recipes"></span>
+        <div class="container">
+          <div class="recipes-header">
+            <h2 class="title ta--center white"><span hidden>52</span> рецепта</h2>
+
+            <!--Фильтры-->
+            <div class="filters-wrapper">
+              <div class="filters">
+                <div class="select" data-select>
+                  <input type="hidden" name="type" value="" />
+                  <button class="select__button" data-select-button><span>Тип блюда</span></button>
+                  <ul class="select__dropdown">
+                    <li data-value="starters">Закуски и лёгкие блюда</li>
+                    <li data-value="mains">Основные горячие блюда</li>
+                    <li data-value="baking">Выпечка и изделия из теста</li>
+                  </ul>
+                </div>
+                <div class="select" data-select>
+                  <input type="hidden" name="time" value="" />
+                  <button class="select__button" data-select-button><span>Время приготовления</span></button>
+                  <ul class="select__dropdown">
+                    <li data-value="under-20">Очень быстрое (до 20 минут)</li>
+                    <li data-value="20-30">Быстрое (20-30 минут)</li>
+                    <li data-value="30-60">Среднее (30-60 минут)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="recipes">
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/3.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Запечённый картофель с&nbsp;моцареллой и&nbsp;салями</span></h3>
+                  <ul class="info">
+                    <li>45 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/8.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Моцарелла с оливками и&nbsp;чиабаттой</span></h3>
+                  <ul class="info">
+                    <li>25 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/1.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Капрезе с&nbsp;фисташковым песто</span></h3>
+                  <ul class="info">
+                    <li>15 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/2.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Спагетти с моцареллой и&nbsp;кедровыми орешками</span></h3>
+                  <ul class="info">
+                    <li>45 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/6.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Пицца с пепперони и&nbsp;моцареллой</span></h3>
+                  <ul class="info">
+                    <li>90 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/4.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Пирожки Панцеротти с&nbsp;моцареллой и&nbsp;травами</span></h3>
+                  <ul class="info">
+                    <li>90 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/7.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Тост Маргарита</span></h3>
+                  <ul class="info">
+                    <li>20 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/5.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Куриный шницель с&nbsp;моцареллой и&nbsp;пастой орзо</span></h3>
+                  <ul class="info">
+                    <li>30 мин</li>
+                    <li>4 порции</li>
+                    <li class="medium">средняя</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./single" class="recipe">
+                <div class="recipe__image">
+                  <img src="./assets/img/recipes/9.webp" alt="Galbani" />
+                  <button type="button" class="more">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+                <div class="recipe__content">
+                  <h3 class="title butterfly"><span>Паннини с&nbsp;моцареллой и&nbsp;тапенадом из&nbsp;маслин</span></h3>
+                  <ul class="info">
+                    <li>15 мин</li>
+                    <li>4 порции</li>
+                    <li class="ease">просто</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="buttons">
+            <button class="button">Загрузить ещё</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer" id="footer">
+      <p>&copy; 2025 Galbani</p>
+    </footer>
+
+    <!--POPUPS-->
+    <div class="backdrop" data-backdrop>
+      <div class="popup" data-popup>
+        <!--languages-->
+        <div class="popup-content" id="language-popup">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="title">Изменить язык</h2>
+          <ul class="language-switcher">
+            <li data-lang="ru" lang="ru">Русский</li>
+            <li data-lang="hy" lang="hy">Հայերեն</li>
+            <li data-lang="ka" lang="ka">ქართული</li>
+            <li data-lang="kk" lang="kk">Қазақ</li>
+            <li data-lang="az" lang="az">Azərbaycan</li>
+          </ul>
+        </div>
+
+        <!--markets-->
+        <div class="popup-content" id="markets">
+          <button class="popup-close" data-popup-close></button>
+          <ul class="markets">
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/ozon.webp" alt="ozon" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/o-kay.webp" alt="o-kay" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/utkonos.webp" alt="utkonos" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/perekrestok.webp" alt="perekrestok" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/metro.webp" alt="metro" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/vprok.webp" alt="vprok" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/azbuka-vkusa.webp" alt="azbuka-vkusa" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/magnit.webp" alt="magnit" /><button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/sber-market.webp" alt="sber-market" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/tvoy-dom.webp" alt="tvoy-dom" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/elisey.webp" alt="elisey" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/diksi.webp" alt="diksi" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/lenta.webp" alt="lenta" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/billa.webp" alt="billa" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/ashan.webp" alt="ashan" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/globus.webp" alt="globus" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/atak.webp" alt="atak" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/selgros.webp" alt="selgros" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/kirovskiy.webp" alt="kirovskiy" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/semiya.webp" alt="semiya" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/alie-parusa.webp" alt="alie-parusa" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/megamart.webp" alt="megamart" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/prisma.webp" alt="prisma" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/tarbis.webp" alt="tarbis" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/maksi.webp" alt="maksi" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/lend.webp" alt="lend" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/gastronom.webp" alt="gastronom" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/smartori.webp" alt="smartori" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/globus-gurme.webp" alt="globus-gurme" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/evroros.webp" alt="evroros" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/giperbola.webp" alt="giperbola" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/tvoy.webp" alt="tvoy" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/img/markets/derevnya.webp" alt="derevnya" /> <button class="button blue small">Купить</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

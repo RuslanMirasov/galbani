@@ -1,0 +1,275 @@
+.about {
+  max-width: 995px;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding-top: 100px;
+  background: url('../img/svg/about.svg') no-repeat center top;
+  background-size: 100% auto;
+  color: var(--white);
+  text-align: center;
+
+  .title {
+    text-align: center;
+  }
+
+  .subtitle {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-top: 62px;
+    font-size: 24px;
+  }
+}
+
+.about-list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 68px;
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background: var(--white);
+    border-radius: 30px;
+    padding: 32px 34px;
+    width: calc((100% - 30px) / 2);
+
+    img {
+      width: 130px;
+      border-radius: 20px;
+    }
+  }
+
+  .about-list__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 6px;
+    h2 {
+      font-size: 28px;
+    }
+    span {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.about-footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+  color: var(--white);
+  margin-top: 30px;
+
+  .about-footer__image {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: var(--400);
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    .button {
+      min-width: 320px;
+    }
+  }
+}
+
+@media (max-width: 1365px) {
+  .about-list {
+    .about-list__content {
+      h2 {
+        font-size: 28px;
+        line-height: 1.1;
+      }
+      span {
+        font-size: 20px;
+        line-height: 1.2;
+      }
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .about {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: -20px;
+    padding-top: 100px;
+    background: url('../img/svg/about.svg') no-repeat center top;
+    background-size: 100% auto;
+    color: var(--white);
+    text-align: center;
+
+    .title {
+      text-align: center;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  .about-list {
+    gap: 20px;
+    li {
+      gap: 20px;
+      padding: 22px 24px;
+    }
+
+    .about-list__content {
+      h2 {
+        font-size: 22px;
+      }
+      span {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .about-footer {
+    max-width: 600px;
+    gap: 40px;
+    margin-top: 40px;
+
+    p {
+      font-size: 20px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      .button {
+        min-width: 20px;
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .about {
+    max-width: 670px;
+    .title {
+      font-size: 48px;
+    }
+  }
+
+  .about-list {
+    gap: 20px;
+    li {
+      width: 100%;
+      padding: 32px;
+    }
+
+    .about-list__content {
+      h2 {
+        font-size: 28px;
+      }
+      span {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    max-width: 310px;
+    padding-top: 0px;
+    margin-top: 20px;
+    .title {
+      font-size: 36px;
+    }
+    .subtitle {
+      font-size: 18px;
+      margin-top: 18px;
+    }
+  }
+
+  .about-list {
+    gap: 10px;
+    max-width: 400px;
+
+    li {
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 32px;
+      border-radius: 32px;
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+
+    .about-list__content {
+      h2 {
+        font-size: 28px;
+      }
+      span {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .about-footer {
+    max-width: 355px;
+    gap: 30px;
+    margin-top: 30px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

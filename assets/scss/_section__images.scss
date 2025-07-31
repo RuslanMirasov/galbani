@@ -1,0 +1,60 @@
+.hero-backgrounds {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 40%;
+  }
+
+  .hero-backgrounds__left,
+  .hero-backgrounds__right {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+  }
+
+  .hero-backgrounds__left {
+    width: calc(50% + 30px);
+    left: 0px;
+  }
+  .hero-backgrounds__right {
+    width: calc(50% - 30px);
+    right: 0px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1279px) {
+  .hero-backgrounds {
+    margin-top: 60px;
+    &:before {
+      padding-top: 50%;
+    }
+
+    .hero-backgrounds__left {
+      width: 50%;
+    }
+    .hero-backgrounds__right {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-backgrounds {
+    &:before {
+      padding-top: 64%;
+    }
+  }
+}

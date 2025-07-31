@@ -1,0 +1,37 @@
+:root {
+  --400: 'gilroy-regular', sans-serif;
+  --500: 'gilroy-medium', sans-serif;
+  --600: 'gilroy-semibold', sans-serif;
+  --700: 'gilroy-bold', sans-serif;
+
+  --bg: #327cb5;
+  --bg-blue: #00aeef;
+  --color: #012d68;
+  --blue: #012d68;
+  --hover: #0a499e;
+  --blue-light: #e5f0f8;
+  --white: #ffffff;
+  --black: #000000;
+  --red: #d10032;
+}
+
+@import 'mixins';
+@import 'fonts';
+@import 'animations';
+@import 'preloader';
+@import 'reset';
+@import 'grid';
+@import 'main';
+@import 'header';
+@import 'buttons';
+@import 'typography';
+@import 'footer';
+@import 'popup';
+@import 'section__images';
+@import 'section__hero';
+@import 'section__happynes';
+@import 'section__markets';
+@import 'section__recipes';
+@import 'section__single';
+@import 'section__about';
+@import 'section__quiz';

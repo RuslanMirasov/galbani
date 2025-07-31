@@ -1,0 +1,18 @@
+.title {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -1.24px;
+  text-align: left;
+  text-transform: uppercase;
+  &.ta--center {
+    text-align: center;
+  }
+
+  &.title--h2 {
+    font-size: 28px;
+    text-transform: none;
+  }
+}

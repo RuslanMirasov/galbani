@@ -1,0 +1,252 @@
+.section--single {
+  padding: 150px 0px 50px 0px;
+  height: 100%;
+  overflow: visible;
+  .container {
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.single {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 50px;
+  margin-top: 40px;
+
+  .thumbnail {
+    position: sticky;
+    top: 100px;
+    width: 38.75%;
+    overflow: hidden;
+    border-radius: 30px;
+    img {
+      width: 100%;
+    }
+    &.thumbnail--inMobil {
+      display: none;
+    }
+  }
+
+  .content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    color: var(--white);
+    width: calc(61.25% - 50px);
+    .info {
+      margin-top: 10px;
+    }
+    .title {
+      text-transform: none;
+      line-height: 1.1;
+      &.title--h2 {
+        margin-top: 10px;
+      }
+    }
+    .button {
+      min-width: 260px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  font-size: 16px;
+  padding-left: 24px;
+  li {
+    position: relative;
+    width: 100%;
+  }
+}
+
+ul.list {
+  li {
+    &:before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      background: url('../img/svg/li.svg') no-repeat center center/cover;
+      position: absolute;
+      left: 0px;
+      top: 1px;
+      transform: translate(-20px, 0px);
+    }
+  }
+}
+
+ol.list {
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    &:before {
+      content: counter(item) '.';
+      position: absolute;
+      left: 0px;
+      transform: translate(-24px, 0px);
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .single {
+    gap: 50px;
+    margin-top: 40px;
+    justify-content: space-between;
+
+    .thumbnail {
+      width: 35%;
+      border-radius: 30px;
+      top: 90px;
+    }
+
+    .content {
+      width: calc(65% - 50px);
+
+      .button {
+        min-width: 60px;
+        max-width: 260px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .single {
+    gap: 40px;
+    margin-top: 30px;
+
+    .thumbnail {
+      width: 35%;
+      border-radius: 30px;
+      top: 90px;
+    }
+
+    .content {
+      width: calc(65% - 40px);
+
+      .title {
+        font-size: 42px;
+        &.title--h2 {
+          margin-top: 10px;
+          font-size: 28px;
+        }
+      }
+      .button {
+        min-width: 60px;
+        max-width: 260px;
+        width: 100%;
+      }
+    }
+  }
+
+  .list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .single {
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 520px;
+
+    .thumbnail {
+      display: none;
+      width: 100%;
+      position: relative;
+      margin-bottom: 10px;
+      top: 0px;
+      &.thumbnail--inMobil {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+
+    .content {
+      width: 100%;
+
+      .title {
+        font-size: 36px;
+        line-height: 1.2;
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section--single {
+    .container {
+      > .buttons {
+        max-width: 320px;
+      }
+    }
+  }
+  .single {
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 320px;
+
+    .thumbnail {
+      display: none;
+      width: 100%;
+      position: relative;
+      margin-bottom: 10px;
+      top: 0px;
+      &.thumbnail--inMobil {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+
+    .content {
+      width: 100%;
+
+      .title {
+        font-size: 36px;
+        line-height: 1.2;
+        &:before {
+          content: none;
+        }
+      }
+
+      .button {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .info {
+      gap: 6px;
+      font-size: 16px;
+      justify-content: space-between;
+      li:before {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

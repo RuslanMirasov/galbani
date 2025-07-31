@@ -1,0 +1,70 @@
+.main {
+  display: block;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 100vw;
+    height: 100svh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+  }
+
+  &:before {
+    background-image: url('../img/main-bg-left-desctop.webp'), url('../img/main-bg-right-desctop.webp');
+    background-position: top left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    z-index: 1;
+    pointer-events: none;
+
+    @media (max-width: 767px) {
+      background-image: url('../img/main-bg-left-mobil.webp'), url('../img/main-bg-right-mobil.webp');
+    }
+
+    @media (orientation: portrait) {
+      background-image: url('../img/main-bg-left-mobil.webp'), url('../img/main-bg-right-mobil.webp');
+    }
+  }
+
+  &:after {
+    background: #5899ca;
+    background: radial-gradient(circle, rgba(88, 153, 202, 1) 0%, rgba(40, 107, 158, 1) 76%, rgba(6, 74, 145, 1) 100%);
+    z-index: 0;
+  }
+
+  &.main--noImage {
+    @media (min-width: 768px) {
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+  @media (max-width: 1329px) {
+    padding: 0px 20px;
+  }
+  @media (max-width: 767px) {
+    padding: 0px 10px;
+  }
+}
+
+.section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &.visible {
+    overflow: visible;
+  }
+}
