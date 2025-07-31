@@ -8,10 +8,13 @@
   &:after {
     content: '';
     width: 100vw;
-    height: 100svh;
+    height: 100vh;
     position: fixed;
     left: 0px;
     top: 0px;
+    @media (max-width: 1023px) {
+      width: 100%;
+    }
   }
 
   &:before {
