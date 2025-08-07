@@ -3,14 +3,11 @@ export const scrollToBlock = (selector, offset = 0) => {
 
   if (!element) {
     const targetId = selector.replace('#', '');
-    const newUrl = `/${targetId ? `#${targetId}` : ''}`;
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const basePath = pathParts.length >= 2 ? '/' + pathParts.slice(0, 2).join('/') : '';
+    const fullUrl = `${window.location.origin}${basePath}/#${targetId}`;
 
-    if (window.location.pathname === '/' || window.location.pathname === '') {
-      window.location.hash = targetId;
-      window.location.reload(); // для iOS
-    } else {
-      window.location.assign(newUrl);
-    }
+    window.location.href = fullUrl;
     return;
   }
 

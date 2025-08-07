@@ -103,6 +103,12 @@ export const hidePreloader = () => {
   backgroundImageUrls.forEach(url => {
     fetch(url).then(markLoaded).catch(markLoaded);
   });
+
+  setTimeout(() => {
+    if (loaded < total) {
+      body.classList.add('loaded');
+    }
+  }, 4000);
 };
 
 export const initNavigationMenu = () => {

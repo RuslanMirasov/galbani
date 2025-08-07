@@ -561,6 +561,7 @@ a {
   gap: 60px;
   transition: 1s;
   opacity: 0;
+  pointer-events: none;
 }
 .menu.menu--left {
   justify-content: flex-end;
@@ -619,6 +620,7 @@ a {
 }
 .body.loaded .menu {
   opacity: 1;
+  pointer-events: all;
 }
 .body.loaded .header__logo .logo {
   transform: translate(-50%, calc(-50svh + 140px)) scale(1);
@@ -1167,12 +1169,13 @@ a {
   width: 100%;
   height: 150px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   color: var(--white);
   background: url("../img/svg/footer-background.svg") no-repeat center top/cover;
   margin-top: auto;
   flex-shrink: 0;
   z-index: 2;
+  padding-bottom: 40px;
 }
 
 .copy {
@@ -1183,7 +1186,7 @@ a {
 
 @media (max-width: 767px) {
   .footer {
-    height: 120px;
+    height: 140px;
     background: url("../img/svg/footer-background-mobil.svg") no-repeat center top/cover;
   }
 }
@@ -1534,10 +1537,10 @@ body.locked {
 }
 @media (max-width: 767px) {
   .hero-content .title {
-    font-size: 21px;
+    font-size: 28px;
   }
   .hero-content .title span {
-    font-size: 28px;
+    font-size: 42px;
   }
 }
 .hero-content:before {
@@ -1841,7 +1844,7 @@ body.locked {
   }
   .happynes li:nth-child(2) {
     margin-top: 0px;
-    order: 2;
+    order: 1;
   }
   .happynes li p {
     font-size: 18px;
@@ -2064,7 +2067,7 @@ body.locked {
   height: 40px;
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: 1px;
   transition: 0.3s;
   transform: rotate(0deg);
   background: url("../img/svg/arrow.svg") no-repeat center center;
@@ -2491,6 +2494,7 @@ body.locked {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;

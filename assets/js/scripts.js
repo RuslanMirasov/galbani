@@ -16,3 +16,9 @@ initStickyFilters();
 initQuiz();
 initLanguageSwitcher();
 hidePreloader();
+
+window.addEventListener('pageshow', e => {
+  if (e.persisted) {
+    document.querySelector('.body')?.classList.add('loaded');
+  }
+});

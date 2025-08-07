@@ -104,6 +104,7 @@
   gap: 60px;
   transition: 1s;
   opacity: 0;
+  pointer-events: none;
 
   &.menu--left {
     justify-content: flex-end;
@@ -171,6 +172,7 @@
   }
   .menu {
     opacity: 1;
+    pointer-events: all;
   }
   .header__logo {
     .logo {
